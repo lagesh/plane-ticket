@@ -24,6 +24,10 @@
   background-color: rgb(13, 61, 148);
   height: 15%;
 }
+.footer {
+  height: 10%;
+  background-color: rgb(13, 61, 148);
+}
 
 h2 {
   font-size: 1.2rem;
@@ -62,7 +66,7 @@ p {
 .logo {
   height: 40px;
   width: auto;
-  color: rgb(13, 61, 148);
+  background-color: rgb(255, 255, 255);
 }
 
 .code {
@@ -90,7 +94,9 @@ p {
   display: flex;
   justify-content: space-between;
 }
-
+.baseline-details {
+  margin-bottom: 10px;
+}
 /* --------STUB------ */
 .stub {
   width: 30%;
