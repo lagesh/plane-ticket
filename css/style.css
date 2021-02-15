@@ -6,11 +6,16 @@
   font-family: 'Open Sans', sans-serif;
   color: rgb(19, 3, 78);
 }
-
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  height: 100vh;
+}
 .ticket {
   width: 770px;
   height: 300px;
-  margin: 50px auto;
+  margin: 0 auto;
   border: 1px solid transparent;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -105,6 +110,7 @@ p {
   width: 70%;
 }
 /* --------STUB------ */
+
 .stub {
   width: 30%;
   height: 100%;
