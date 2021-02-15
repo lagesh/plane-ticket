@@ -21,12 +21,12 @@
 }
 
 .header {
-  background-color: rgb(13, 61, 148);
+  background-color: rgb(10, 46, 112);
   height: 15%;
 }
 .footer {
   height: 10%;
-  background-color: rgb(13, 61, 148);
+  background-color: rgb(10, 46, 112);
 }
 
 h2 {
@@ -62,7 +62,11 @@ p {
   align-items: center;
   padding: 0 20px;
 }
-
+.carrier {
+  color: rgb(200, 228, 241);
+  font-style: italic;
+  margin-left: -175px;
+}
 .logo {
   height: 40px;
   width: auto;
@@ -78,7 +82,7 @@ p {
   -o-transform: rotate(90deg);
   float: right;
   position: relative;
-  top: -10px;
+  top: 15px;
   right: -40px;
 }
 
@@ -86,7 +90,7 @@ p {
 .depart,
 .midline-details,
 .baseline-details {
-  margin: 30px 20px;
+  margin: 32px 20px;
 }
 
 .midline-details,
@@ -94,9 +98,13 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.midline-details {
+  margin-bottom: 20px;
+}
 .baseline-details {
+  margin-top: 20px;
   margin-bottom: 10px;
-  width: 80%;
+  width: 75%;
 }
 /* --------STUB------ */
 .stub {
