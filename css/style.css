@@ -12,9 +12,24 @@
   background-color: aliceblue;
   height: 100vh;
 }
+
 .information {
-  padding: 75px;
+  padding: 80px;
   text-align: center;
+}
+label {
+  font-size: 1.4rem;
+}
+
+input {
+  width: 40%;
+  height: 35px;
+  margin: 15px;
+}
+
+span {
+  font-size: 12px;
+  font-style: italic;
 }
 .ticket {
   width: 770px;
