@@ -12,6 +12,10 @@
   background-color: aliceblue;
   height: 100vh;
 }
+.information {
+  padding: 75px;
+  text-align: center;
+}
 .ticket {
   width: 770px;
   height: 300px;

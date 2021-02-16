@@ -5,4 +5,4 @@ let passengerName2 = document.querySelector('.stub-name');
 let passengerName = [passengerName1, passengerName2];
 passengerName.forEach(name => {
   name.style.visibility = 'hidden';
-})
+});
