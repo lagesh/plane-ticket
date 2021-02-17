@@ -1,6 +1,5 @@
 let passengerName1 = document.querySelector('.name');
 let passengerName2 = document.querySelector('.stub-name');
-// console.log(passengerName2, passengerName1);
 
 let passengerName = [passengerName1, passengerName2];
 passengerName.forEach(name => {
@@ -9,9 +8,21 @@ passengerName.forEach(name => {
 
 let passengerInput = document.getElementById('name');
 let input = document.querySelector('input');
-passengerInput.addEventListener('input', function () {
+// console.log(passengerInput, input);
+
+let inputValue = () => {
   passengerName.forEach(name => {
-    name.innerHTML = input;
     name.style.visibility = 'visible';
+    name.innerHTML = input.value.toUpperCase();
   });
-})
+}
+
+passengerInput.oninput = inputValue;
+
+function refresh() {
+  passengerName.forEach(name => {
+    name.style.visibility = 'hidden';
+  });
+}
+let refreshButton = document.getElementById('refreshButton');
+refreshButton.onclick = refresh;
