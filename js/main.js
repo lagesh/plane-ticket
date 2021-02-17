@@ -8,21 +8,20 @@ passengerName.forEach(name => {
 
 let passengerInput = document.getElementById('name');
 let input = document.querySelector('input');
-// console.log(passengerInput, input);
 
-let inputValue = () => {
+function refresh() {
+  let passName = document.getElementsByClassName('passenger');
+  passName.style.margin = "15px 20px"
+}
+
+function inputValue() {
   passengerName.forEach(name => {
     name.style.visibility = 'visible';
     name.innerHTML = input.value.toUpperCase();
+    if (input.value.length === 0) {
+      return refresh;
+    }
   });
 }
-
 passengerInput.oninput = inputValue;
 
-function refresh() {
-  passengerName.forEach(name => {
-    name.style.visibility = 'hidden';
-  });
-}
-let refreshButton = document.getElementById('refreshButton');
-refreshButton.onclick = refresh;
