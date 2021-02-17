@@ -6,3 +6,6 @@ let passengerName = [passengerName1, passengerName2];
 passengerName.forEach(name => {
   name.style.visibility = 'hidden';
 });
+
+let passengerInput = document.getElementById('name');
+passengerInput.addEventListener('input',)
