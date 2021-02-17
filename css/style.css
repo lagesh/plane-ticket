@@ -69,6 +69,14 @@ p {
   font-weight: 600;
 }
 
+#refreshButton {
+  width: 100px;
+  color: #fff;
+  background-color: rgb(16, 70, 170);
+  cursor: pointer;
+  padding: 7px;
+  margin-top: 10px;
+}
 /* -------MAIN TICKET ------ */
 .main {
   width: 70%;

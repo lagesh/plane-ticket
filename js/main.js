@@ -8,4 +8,10 @@ passengerName.forEach(name => {
 });
 
 let passengerInput = document.getElementById('name');
-passengerInput.addEventListener('input',)
+let input = document.querySelector('input');
+passengerInput.addEventListener('input', function () {
+  passengerName.forEach(name => {
+    name.innerHTML = input;
+    name.style.visibility = 'visible';
+  });
+})
