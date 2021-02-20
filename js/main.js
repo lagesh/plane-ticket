@@ -26,4 +26,3 @@ function inputValue() {
 
 }
 passengerInput.oninput = inputValue;
-
