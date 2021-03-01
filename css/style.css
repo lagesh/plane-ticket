@@ -24,11 +24,10 @@ body {
   margin: 30px auto;
   background-color: aliceblue;
   height: 100vh;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
 .information {
-  padding: 30px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -154,7 +153,6 @@ p {
 
 .baseline-details {
   margin-top: 20px;
-  width: 67%;
 }
 
 
@@ -205,7 +203,7 @@ p {
 }
 
 /* ---------- 4. MEDIA QUERIES ----------- */
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 575px) {
   input {
   width: 75%;
   }
@@ -232,15 +230,45 @@ p {
     font-size: 0.75rem;
   }
   
-  p {
+  p, .name {
     font-size: 1rem;
   }
 
   .code {
-    height: 55px;
+    height: 50px;
+    top: 25px;
+    right: -35px;
   }
 
   .baseline-details {
     width: 68%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  h2 {
+    font-size: 0.75rem;
+  }
+  
+  .header h2:last-child {
+    display: none;
+  }
+  h3 {  
+    font-size: 0.65rem;
+  }
+  
+  p, .name {
+    font-size: 0.75rem;
+  }
+
+  .code {
+    height: 40px;
+    top: 40px;
+    right: -30px;
+  }
+
+  .baseline-details {
+    width: 70%;
   }
 }
